@@ -1,9 +1,8 @@
-# SSH-Trap
+# DB Blacklisting SSH-Trap 
 
-A ssh server that accepts connections and only writes random data in 10 seconds interval to keep the connection alive.
+Personal repo for learning go and integration in docker. 
+It could give an extension of the great https://github.com/frelon/ssh-trap to allow to store the ips into a database. 
 
 ```go
 go run main.go -port 2324 -alsologtostderr
 ```
-
-Inspired by [Endlessh](https://nullprogram.com/blog/2019/03/22/)
