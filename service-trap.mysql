@@ -1,4 +1,4 @@
-CREATE TABLE `banned-ips` (
+CREATE TABLE `banned` (
   `id` bigint(20) UNSIGNED AUTO_INCREMENT,
   `ip` varchar(46) NOT NULL DEFAULT '',
   `port` varchar(100) NOT NULL DEFAULT '',

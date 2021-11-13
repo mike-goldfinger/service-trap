@@ -1,9 +1,9 @@
 DB_USER: service-trap-user
 DB_PASSWORD: verrysecurepassword
-DB_NAME: trap-blocklist
+DB_NAME: trapblocklist
 DB_HOST: supercluster.example.com
 DB_PORT: 3306
-DB_TABLE: banned-ips
+DB_TABLE: banned
 LISTEN_PORT: 22
 LISTEN_ADDRESS: 0.0.0.0
 #Data Category not yet used
