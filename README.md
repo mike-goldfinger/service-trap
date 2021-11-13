@@ -51,10 +51,11 @@ You need to install [Go](https://golang.org/) to get it running if not using doc
    ```sh
    git https://github.com/mike-goldfinger/service-trap.git
    ```
+2. Create a Database and a user with insert permission to it and import the [service-trap.mysql](https://github.com/mike-goldfinger/service-trap/blob/master/service-trap.mysql) to create the table
 
-2. Merge and modify docker-compose.yml to your needs
+3. Merge and modify docker-compose.yml to your needs
 
-2. Start it:
+4. Start it:
    ```sh
 	docker-compose -f <pathToFile>/docker-compose.yml up -d
    ```
