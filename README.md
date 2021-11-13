@@ -65,9 +65,9 @@ You need to install [Go](https://golang.org/) to get it running if not using doc
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### Trap IPs and fill the Database 
+### How to trap IPs to fill the Database 
 
-There are currently two ways to get this database filled:
+You can use either [service-trap](https://github.com/mike-goldfinger/service-trap) to set up an trap which listen on a specified port (Works with Go and as Docker Container) or using [fail2ban](https://github.com/fail2ban/fail2ban):
 
 #### service.trap
 
@@ -77,7 +77,7 @@ Using [service-trap](https://github.com/mike-goldfinger/service-trap) you can se
 
 Using [fail2ban](https://github.com/fail2ban/fail2ban) and a part of [iRedMail](https://github.com/iredmail/iRedMail/)  you can set up a fail2ban jail that sends the blocked IP addresses to your database. Here a verry easy how to:  https://docs.iredmail.org/fail2ban.sql.html
 
-### Block the IP addresses in the database
+### Block the IP addresses returned by this http list
 
 Install [http-ip-list-creator](https://github.com/mike-goldfinger/http-ip-list-creator) let your firewall block all IP addresses returned by this http service.
 
