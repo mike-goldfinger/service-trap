@@ -35,13 +35,13 @@ You need to install [Go](https://golang.org/) to get it running if not using doc
    ```
 
 2. Create a Database and a user with insert permission to it and import the [service-trap.mysql](https://github.com/mike-goldfinger/service-trap/blob/master/service-trap.mysql) to create the table
-   
+  
 3. Configure it:
    
    Set the parameters in the file config.yaml according your enviroment
    
 4. Run it
-   ```js
+   ```sh
    go run .
    ```
 
