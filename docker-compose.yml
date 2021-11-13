@@ -1,7 +1,7 @@
 version: '3.1' 
 
 services:
-    service-trap-user:
+    service-trap:
         restart: always
         build:
             context: ./        
