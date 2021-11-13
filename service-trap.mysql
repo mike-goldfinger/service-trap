@@ -1,0 +1,21 @@
+CREATE TABLE `banned-ips` (
+  `id` bigint(20) UNSIGNED AUTO_INCREMENT,
+  `ip` varchar(46) NOT NULL DEFAULT '',
+  `port` varchar(100) NOT NULL DEFAULT '',
+  `protocol` varchar(10) NOT NULL DEFAULT 'tcp',
+  `category` varchar(50) NOT NULL DEFAULT '',
+  `hostname` varchar(255) NOT NULL DEFAULT '',
+  `country` varchar(255) NOT NULL DEFAULT '',
+  `rdns` varchar(255) NOT NULL DEFAULT '',
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
+  `remove` tinyint(1) DEFAULT 0,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ip` (`id`,`ip`),
+  INDEX `hostname` (`hostname`),
+  INDEX `rdns` (`rdns`),
+  INDEX `category` (`category`),
+  INDEX `country` (`country`),
+  INDEX `timestamp` (`timestamp`),
+  INDEX `remove` (`remove`)
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

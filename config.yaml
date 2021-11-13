@@ -1,0 +1,12 @@
+DB_USER: service-trap-user
+DB_PASSWORD: verrysecurepassword
+DB_NAME: trap-blocklist
+DB_HOST: supercluster.example.com
+DB_PORT: 3306
+DB_TABLE: banned-ips
+LISTEN_PORT: 22
+LISTEN_ADDRESS: 0.0.0.0
+#Data Category not yet used
+DATA_CATEGORY: default
+#TCP is the only protocol working. Maybe i'm going to add udp and IPv6 to it later
+LISTEN_PROTOCOL: tcp
