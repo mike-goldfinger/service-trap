@@ -14,7 +14,7 @@ The idea comes from https://github.com/iredmail/ fail2ban DB Store: https://docs
 
 ## Database
 
-Create a MySQL/MariaDB Database and Table with at least the following rows:
+Create a MySQL/MariaDB database and the table using https://github.com/mike-goldfinger/service-trap/blob/master/service-trap.mysql
 
 <!-- GETTING STARTED -->
 ## Getting Started
