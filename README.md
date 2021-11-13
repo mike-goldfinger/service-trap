@@ -70,6 +70,6 @@ You need to install [Go](https://golang.org/) to get it running if not using doc
 
 2. Configure and install the list creator: https://github.com/mike-goldfinger/http-ip-list-creator
 
-3. Forward the tcp port you want to use as trap to the ssh trap docker container or start it directly on your server using go
+3. Forward the tcp port you want to use as trap to the service-trap docker container or start it directly on your server using go
 
 4. Install pfBlockerNG into your pfsense Firewall and set it up to get the IP list from http-ip-list-creator
