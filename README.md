@@ -19,7 +19,7 @@ Create a MySQL/MariaDB database. You can use the following mysql file to create 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You can either use service-trap directly using Go or, coming soon also over your docker enviroment
+You can either use service-trap directly using Go or on your docker enviroment
 
 ### Prerequisites
 
@@ -34,7 +34,7 @@ You need to install [Go](https://golang.org/) to get it running if not using doc
    git clone https://github.com/mike-goldfinger/service-trap.git
    ```
 
-2. Creat a Database and a user with insert permission to it and import the service-trap.mysql to create the table
+2. Create a Database and a user with insert permission to it and import the [service-trap.mysql](https://github.com/mike-goldfinger/service-trap/blob/master/service-trap.mysql) to create the table
    
 3. Configure it:
    
