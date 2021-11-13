@@ -62,15 +62,25 @@ You need to install [Go](https://golang.org/) to get it running if not using doc
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-1. Configure and install the trap: https://github.com/mike-goldfinger/service-trap
+### Trap IPs and fill the Database 
 
-2. Configure and install the list creator: https://github.com/mike-goldfinger/http-ip-list-creator
+There are currently two ways to get this database filled:
 
-3. Forward the tcp port you want to use as trap to the service-trap docker container or start it directly on your server using go
+#### service.trap
 
-4. Install pfBlockerNG into your pfsense Firewall and set it up to get the IP list from http-ip-list-creator
+Using [service-trap](https://github.com/mike-goldfinger/service-trap) you can set up a dummy service that listens on a port you have configured and sends the gathered IP addresses to your database. Just forward the port from your Firewall to this service-trap.
+
+#### fail2ban
+
+Using [fail2ban](https://github.com/fail2ban/fail2ban) and a part of [iRedMail](https://github.com/iredmail/iRedMail/)  you can set up a fail2ban jail that sends the blocked IP addresses to your database. Here a verry easy how to:  https://docs.iredmail.org/fail2ban.sql.html
+
+### Block the IP addresses in the database
+
+Install [http-ip-list-creator](https://github.com/mike-goldfinger/http-ip-list-creator) let your firewall block all IP addresses returned by this http service.
+
+#### Example using pfsense
+
+You can install the package pfBlockerNG in your [pfsense](https://github.com/pfsense/pfsense) Firewall. Under an IPv4 Setting page you can add the IP adress or Hostname of your [http-ip-list-creator](https://github.com/mike-goldfinger/http-ip-list-creator) to the an “IPv4 List” (Format: Auto).  
