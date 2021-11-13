@@ -31,7 +31,7 @@ You need to install [Go](https://golang.org/) to get it running if not using doc
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/mike-goldfinger/service-trap .git
+   git clone https://github.com/mike-goldfinger/service-trap.git
    ```
 
 2. Creat a Database and a user with insert permission to it and import the service-trap.mysql to create the table
