@@ -3,7 +3,7 @@
 
 ## About The Project
 
-service-trap is listening on a specified tcp port and sends the client IP to an MySQL/MariaDB database. In addition it writes random data to the client host. 
+service-trap is listening on a specified tcp port and sends the client IP to a MySQL/MariaDB database. In addition, it writes random data to the client host to keep the connection up. This should keep the ugly crawling botnets occupied a bit busy
 
 I forked this project of the great https://github.com/frelon/ssh-trap
 The idea comes from https://github.com/iredmail/ fail2ban DB Store: https://docs.iredmail.org/fail2ban.sql.html
@@ -14,7 +14,7 @@ The idea comes from https://github.com/iredmail/ fail2ban DB Store: https://docs
 
 ## Database
 
-Create a MySQL/MariaDB database and the table using https://github.com/mike-goldfinger/service-trap/blob/master/service-trap.mysql
+Create a MySQL/MariaDB database. You can use the following mysql file to create the table: https://github.com/mike-goldfinger/service-trap/blob/master/service-trap.mysql
 
 <!-- GETTING STARTED -->
 ## Getting Started
